@@ -7,6 +7,10 @@
     "url": "https://github.com/ntnyq/ntnyq.git"
   },
   "license": "MIT",
+  "keywords": [
+    "ntnyq",
+    "cli"
+  ],
   "author": "ntnyq <ntnyq@gmail.com>",
   "main": "lib/cli.js",
   "bin": {
