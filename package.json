@@ -25,17 +25,17 @@
   "prettier": "prettier-config-goy",
   "dependencies": {
     "import-jsx": "^4.0.0",
-    "ink": "^2.7.1",
-    "ink-big-text": "^1.1.0",
+    "ink": "^3.0.4",
+    "ink-big-text": "^1.2.0",
     "ink-box": "^1.0.0",
-    "ink-gradient": "^1.0.0",
+    "ink-gradient": "^2.0.0",
     "ink-image": "^2.0.0",
-    "ink-select-input": "^3.1.2",
-    "open": "^7.0.4",
+    "ink-select-input": "^4.0.0",
+    "open": "^7.2.0",
     "react": "^16.13.1"
   },
   "devDependencies": {
-    "prettier": "^2.0.5",
+    "prettier": "^2.1.0",
     "prettier-config-goy": "^1.1.0"
   },
   "engines": {
