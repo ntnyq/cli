@@ -22,20 +22,20 @@
   "scripts": {
     "start": "node lib/cli"
   },
-  "prettier": "prettier-config-goy",
+  "prettier": "@ntnyq/prettier-config",
   "dependencies": {
     "import-jsx": "^4.0.0",
-    "ink": "^3.0.4",
+    "ink": "^3.0.8",
     "ink-big-text": "^1.2.0",
     "ink-gradient": "^2.0.0",
     "ink-image": "^2.0.0",
-    "ink-select-input": "^4.0.0",
-    "open": "^7.2.1",
-    "react": "^16.13.1"
+    "ink-select-input": "^4.2.0",
+    "open": "^7.3.0",
+    "react": "^17.0.1"
   },
   "devDependencies": {
-    "prettier": "^2.1.1",
-    "prettier-config-goy": "^1.1.0"
+    "@ntnyq/prettier-config": "^0.1.0",
+    "prettier": "^2.1.2"
   },
   "engines": {
     "node": ">=10"
