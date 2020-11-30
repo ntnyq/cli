@@ -35,8 +35,8 @@
     "react": "^17.0.1"
   },
   "devDependencies": {
-    "@ntnyq/prettier-config": "^0.1.0",
-    "prettier": "^2.1.2"
+    "@ntnyq/prettier-config": "^0.2.0",
+    "prettier": "^2.2.1"
   },
   "engines": {
     "node": ">=10"
