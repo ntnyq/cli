@@ -2,15 +2,15 @@
   "name": "ntnyq",
   "version": "0.0.5",
   "description": "The ntnyq CLI",
+  "keywords": [
+    "ntnyq",
+    "cli"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/ntnyq/ntnyq.git"
   },
   "license": "MIT",
-  "keywords": [
-    "ntnyq",
-    "cli"
-  ],
   "author": "ntnyq <ntnyq@gmail.com>",
   "main": "lib/cli.js",
   "bin": {
@@ -36,6 +36,7 @@
   },
   "devDependencies": {
     "@ntnyq/prettier-config": "^0.2.0",
+    "@types/react": "^17.0.0",
     "prettier": "^2.2.1"
   },
   "engines": {
