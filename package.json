@@ -30,13 +30,13 @@
     "ink-gradient": "^2.0.0",
     "ink-link": "^2.0.0",
     "ink-select-input": "^4.2.0",
-    "open": "^8.0.2",
+    "open": "^8.2.0",
     "react": "^17.0.1"
   },
   "devDependencies": {
     "@ntnyq/prettier-config": "^0.3.0",
-    "@types/react": "^17.0.3",
-    "prettier": "^2.2.1"
+    "@types/react": "^17.0.9",
+    "prettier": "^2.3.0"
   },
   "engines": {
     "node": ">=12"
