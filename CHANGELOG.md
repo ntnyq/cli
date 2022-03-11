@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.7](https://github.com/ntnyq/ntnyq/compare/v0.0.6...v0.0.7) (2022-03-11)
+
+
+### Features
+
+* migrate to typescript ([a0c6d1e](https://github.com/ntnyq/ntnyq/commit/a0c6d1e4c357baa781b0320570c4be72f0abe727))
+* migrate to typescript ([c31b3d4](https://github.com/ntnyq/ntnyq/commit/c31b3d428f35eaaaeabfdac8d7659d62f7a1c41f))
+
 ### [0.0.6](https://github.com/ntnyq/ntnyq/compare/v0.0.5...v0.0.6) (2021-03-15)
 
 ### [0.0.5](https://github.com/ntnyq/ntnyq/compare/v0.0.4...v0.0.5) (2020-12-31)
