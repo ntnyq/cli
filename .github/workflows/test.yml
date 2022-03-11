@@ -18,4 +18,5 @@ jobs:
         with:
           node-version: latest
       - run: yarn install
+      - run: yarn build
       - run: yarn test
