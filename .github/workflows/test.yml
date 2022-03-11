@@ -16,6 +16,6 @@ jobs:
       - uses: actions/checkout@master
       - uses: actions/setup-node@v2
         with:
-          node-version: '14'
-      - run: yarn install --frozen-lockfile --non-interactive
-      - run: yarn start
+          node-version: latest
+      - run: yarn install
+      - run: yarn test
