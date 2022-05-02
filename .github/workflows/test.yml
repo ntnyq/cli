@@ -4,25 +4,28 @@ on:
   pull_request:
     types: [closed]
     branches:
-      - master
+      - main
   push:
     branches:
-      - master
+      - main
 
 jobs:
   test:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node: ['14', '16']
+        node: [14, 16, 18]
     steps:
       - uses: actions/checkout@master
-      - uses: actions/setup-node@v2
+
+      - uses: pnpm/action-setup@v2.2.1
+        with:
+          run_install: true
+
+      - uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
-      - uses: pnpm/action-setup@v2.0.1
-        with:
-          version: latest
-          run_install: true
+          cache: pnpm
+
       - run: pnpm run build
       - run: pnpm run test

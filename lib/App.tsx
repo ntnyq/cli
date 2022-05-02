@@ -67,7 +67,7 @@ const App: FC<{ name: string }> = ({ name }) => (
       <BigText text={name} />
     </Gradient>
     <Box marginBottom={1}>
-      <Link url={`'https://${name}.com'`}>
+      <Link url={`https://${name}.com`}>
         Hello, this is <Text color='cyan'>{name}</Text>, an FE developer.
       </Link>
     </Box>
