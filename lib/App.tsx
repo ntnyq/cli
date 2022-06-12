@@ -1,36 +1,21 @@
 'use strict'
 
-import React, { FC } from 'react'
+import React from 'react'
 import { Box, Text } from 'ink'
 import open from 'open'
 import Gradient from 'ink-gradient'
 import BigText from 'ink-big-text'
 import Link from 'ink-link'
 import SelectInput from 'ink-select-input'
-
-interface ISelectItem {
-  label: string
-  url?: string
-  key?: string
-  action?: () => void
-}
+import type { ISelectItem } from './types'
 
 const handleSelect = (item: ISelectItem) => {
-  if (item.url) {
-    open(item.url)
-  }
-
-  if (item.action) {
-    item.action()
-  }
+  if (item.url) return open(item.url)
+  item.action?.()
 }
 
-const createItems = (items: ISelectItem[]) => {
-  for (const item of items) {
-    item.key = item.url || item.label
-  }
-  return items
-}
+const createItems = (items: ISelectItem[]) =>
+  items.map(item => ({ ...item, key: item.url || item.label }))
 
 const items: ISelectItem[] = createItems([
   {
@@ -51,7 +36,7 @@ const items: ISelectItem[] = createItems([
   },
   {
     label: `Segment Fault`,
-    url: `https://segmentfault.com/ntnyq`,
+    url: `https://segmentfault.com/u/ntnyq`,
   },
   {
     label: `Quit`,
@@ -61,7 +46,11 @@ const items: ISelectItem[] = createItems([
   },
 ])
 
-const App: FC<{ name: string }> = ({ name }) => (
+export interface Props {
+  name: string
+}
+
+export const App = ({ name }: Props) => (
   <Box flexDirection='column'>
     <Gradient name='rainbow'>
       <BigText text={name} />
@@ -87,5 +76,3 @@ const App: FC<{ name: string }> = ({ name }) => (
     </Box>
   </Box>
 )
-
-export default App
