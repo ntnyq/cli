@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.8](https://github.com/ntnyq/ntnyq/compare/v0.0.7...v0.0.8) (2022-06-12)
+
+
+### Bug Fixes
+
+* segment fault url ([6d9085b](https://github.com/ntnyq/ntnyq/commit/6d9085b3769f4b50aa0132c0f9ce4a88d64fa34c))
+
 ### [0.0.7](https://github.com/ntnyq/ntnyq/compare/v0.0.6...v0.0.7) (2022-03-11)
 
 
