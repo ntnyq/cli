@@ -3,6 +3,7 @@
     "bumpp",
     "changelogithub",
     "pnpm",
+    "sindresorhus",
     "tsup"
   ]
 }

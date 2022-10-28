@@ -2,20 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-### [0.0.8](https://github.com/ntnyq/ntnyq/compare/v0.0.7...v0.0.8) (2022-06-12)
+### [0.0.9](https://github.com/ntnyq/ntnyq/compare/v0.0.8...v0.0.9) (2022-10-28)
 
+Check [Releases](https://github.com/ntnyq/cli/releases) for detail.
+
+### [0.0.8](https://github.com/ntnyq/ntnyq/compare/v0.0.7...v0.0.8) (2022-06-12)
 
 ### Bug Fixes
 
-* segment fault url ([6d9085b](https://github.com/ntnyq/ntnyq/commit/6d9085b3769f4b50aa0132c0f9ce4a88d64fa34c))
+-   segment fault url ([6d9085b](https://github.com/ntnyq/ntnyq/commit/6d9085b3769f4b50aa0132c0f9ce4a88d64fa34c))
 
 ### [0.0.7](https://github.com/ntnyq/ntnyq/compare/v0.0.6...v0.0.7) (2022-03-11)
 
-
 ### Features
 
-* migrate to typescript ([a0c6d1e](https://github.com/ntnyq/ntnyq/commit/a0c6d1e4c357baa781b0320570c4be72f0abe727))
-* migrate to typescript ([c31b3d4](https://github.com/ntnyq/ntnyq/commit/c31b3d428f35eaaaeabfdac8d7659d62f7a1c41f))
+-   migrate to typescript ([a0c6d1e](https://github.com/ntnyq/ntnyq/commit/a0c6d1e4c357baa781b0320570c4be72f0abe727))
+-   migrate to typescript ([c31b3d4](https://github.com/ntnyq/ntnyq/commit/c31b3d428f35eaaaeabfdac8d7659d62f7a1c41f))
 
 ### [0.0.6](https://github.com/ntnyq/ntnyq/compare/v0.0.5...v0.0.6) (2021-03-15)
 

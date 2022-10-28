@@ -2,7 +2,7 @@
 
 :mega: The ntnyq CLI
 
-[![Test](https://github.com/ntnyq/cli/actions/workflows/test.yml/badge.svg)](https://github.com/ntnyq/cli/actions/workflows/test.yml)
+[![CI](https://github.com/ntnyq/cli/workflows/CI/badge.svg)](https://github.com/ntnyq/cli/actions)
 
 ## Usage
 
