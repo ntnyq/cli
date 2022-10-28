@@ -31,8 +31,12 @@ const items: ISelectItem[] = createItems([
     url: `https://github.com/ntnyq`,
   },
   {
-    label: `Blog`,
-    url: `https://ntnyq.github.io`,
+    label: `Bilibili`,
+    url: `https://space.bilibili.com/40199161`,
+  },
+  {
+    label: `Juejin`,
+    url: `https://juejin.cn/user/1591748566717591`,
   },
   {
     label: `Segment Fault`,
