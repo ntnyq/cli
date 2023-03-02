@@ -5,5 +5,5 @@ import { App } from './App'
 
 it(`render App`, () => {
   const { lastFrame } = render(<App name='ntnyq' />)
-  expect(lastFrame().includes(`ntnyq`)).toBeTruthy()
+  expect(lastFrame()?.includes(`ntnyq`)).toBeTruthy()
 })

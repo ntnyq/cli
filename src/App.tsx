@@ -19,31 +19,31 @@ const createItems = (items: ISelectItem[]) =>
 
 const items: ISelectItem[] = createItems([
   {
-    label: `Website`,
-    url: `https://ntnyq.com`,
+    label: 'Website',
+    url: 'https://ntnyq.com',
   },
   {
-    label: `Twitter`,
-    url: `https://twitter.com/ntnyq`,
+    label: 'Twitter',
+    url: 'https://twitter.com/ntnyq',
   },
   {
-    label: `Github`,
-    url: `https://github.com/ntnyq`,
+    label: 'Github',
+    url: 'https://github.com/ntnyq',
   },
   {
-    label: `Bilibili`,
-    url: `https://space.bilibili.com/40199161`,
+    label: 'Bilibili',
+    url: 'https://space.bilibili.com/40199161',
   },
   {
-    label: `Juejin`,
-    url: `https://juejin.cn/user/1591748566717591`,
+    label: 'Juejin',
+    url: 'https://juejin.cn/user/1591748566717591',
   },
   {
-    label: `Segment Fault`,
-    url: `https://segmentfault.com/u/ntnyq`,
+    label: 'Segment Fault',
+    url: 'https://segmentfault.com/u/ntnyq',
   },
   {
-    label: `Quit`,
+    label: 'Quit',
     action() {
       process.exit()
     },
@@ -64,7 +64,10 @@ export const App = ({ name }: Props) => (
         Hello, this is <Text color='cyan'>{name}</Text>, an FE developer.
       </Link>
     </Box>
-    <SelectInput items={items as any} onSelect={handleSelect} />
+    <SelectInput
+      items={items as any}
+      onSelect={handleSelect}
+    />
     <Box
       justifyContent='center'
       width='40%'
