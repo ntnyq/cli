@@ -1,11 +1,12 @@
 'use strict'
 
+import process from 'node:process'
 import React from 'react'
-import { Box, Text } from 'ink'
 import open from 'open'
-import Gradient from 'ink-gradient'
-import BigText from 'ink-big-text'
+import { Box, Text } from 'ink'
 import Link from 'ink-link'
+import BigText from 'ink-big-text'
+import Gradient from 'ink-gradient'
 import SelectInput from 'ink-select-input'
 import type { ISelectItem } from './types'
 
@@ -27,7 +28,7 @@ const items: ISelectItem[] = createItems([
     url: 'https://twitter.com/ntnyq',
   },
   {
-    label: 'Github',
+    label: 'GitHub',
     url: 'https://github.com/ntnyq',
   },
   {
