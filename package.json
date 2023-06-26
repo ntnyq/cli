@@ -2,7 +2,7 @@
   "name": "ntnyq",
   "version": "0.1.1",
   "type": "module",
-  "packageManager": "pnpm@8.6.1",
+  "packageManager": "pnpm@8.6.4",
   "description": "The ntnyq CLI",
   "keywords": [
     "ntnyq",
@@ -38,16 +38,16 @@
   },
   "devDependencies": {
     "@ntnyq/prettier-config": "^1.9.0",
-    "@types/node": "^20.3.0",
-    "@types/react": "^18.2.11",
+    "@types/node": "^20.3.1",
+    "@types/react": "^18.2.14",
     "bumpp": "^9.1.1",
     "ink-testing-library": "^3.0.0",
-    "pnpm": "^8.6.1",
+    "pnpm": "^8.6.4",
     "prettier": "^2.8.8",
-    "tsup": "^6.7.0",
+    "tsup": "^7.1.0",
     "tsx": "^3.12.7",
     "typescript": "^5.1.3",
-    "vitest": "^0.32.0"
+    "vitest": "^0.32.2"
   },
   "engines": {
     "node": ">=16.19"
