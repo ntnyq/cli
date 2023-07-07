@@ -4,7 +4,7 @@
 
 [![CI](https://github.com/ntnyq/cli/workflows/CI/badge.svg)](https://github.com/ntnyq/cli/actions)
 [![NPM VERSION](https://img.shields.io/npm/v/ntnyq.svg)](https://www.npmjs.com/package/ntnyq)
-[![LICENSE](https://img.shields.io/github/license/ntnyq/ntnyq.svg)](https://github.com/ntnyq/ntnyq/blob/main/LICENSE)
+[![LICENSE](https://img.shields.io/github/license/ntnyq/cli.svg)](https://github.com/ntnyq/cli/blob/main/LICENSE)
 
 ## Usage
 
