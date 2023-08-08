@@ -61,7 +61,10 @@ export const App = ({ name }: Props) => (
       <BigText text={name} />
     </Gradient>
     <Box marginBottom={1}>
-      <Link url={`https://${name}.com`}>
+      <Link
+        url={`https://${name}.com`}
+        fallback
+      >
         Hello, this is <Text color='cyan'>{name}</Text>, an FE developer.
       </Link>
     </Box>
