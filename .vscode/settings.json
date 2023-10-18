@@ -1,3 +1,7 @@
 {
+  "editor.formatOnSave": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "cSpell.words": ["Bilibili", "bumpp", "changelogithub", "Juejin", "pnpm", "sindresorhus", "tsup"]
 }

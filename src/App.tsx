@@ -15,8 +15,11 @@ const handleSelect = (item: ISelectItem) => {
   item.action?.()
 }
 
-const createItems = (items: ISelectItem[]) =>
-  items.map(item => ({ ...item, key: item.url || item.label }))
+const createItems = (items: Omit<ISelectItem, 'value'>[]) =>
+  items.map(item => ({
+    ...item,
+    value: item.label,
+  }))
 
 const items: ISelectItem[] = createItems([
   {
@@ -55,7 +58,7 @@ export interface Props {
   name: string
 }
 
-export const App = ({ name }: Props) => (
+export const App: React.FC<Props> = ({ name }) => (
   <Box flexDirection='column'>
     <Gradient name='rainbow'>
       <BigText text={name} />
@@ -68,8 +71,8 @@ export const App = ({ name }: Props) => (
         Hello, this is <Text color='cyan'>{name}</Text>, an FE developer.
       </Link>
     </Box>
-    <SelectInput
-      items={items as any}
+    <SelectInput<string>
+      items={items}
       onSelect={handleSelect}
     />
     <Box
