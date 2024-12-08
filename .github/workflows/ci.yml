@@ -4,11 +4,9 @@ on:
   push:
     branches:
       - main
-      - next
   pull_request:
     branches:
       - main
-      - next
 
 jobs:
   test:
@@ -21,10 +19,11 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
       - uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node }}
-      - uses: pnpm/action-setup@v3
+          cache: pnpm
 
       - run: pnpm install --frozen-lockfile
       - run: pnpm run build

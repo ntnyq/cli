@@ -1,13 +1,13 @@
 {
   "compilerOptions": {
-    "jsx": "react",
-    "outDir": "dist",
     "target": "ESNext",
     "lib": ["ESNext"],
+    "jsx": "react",
     "module": "ESNext",
-    "moduleResolution": "bundler",
+    "moduleResolution": "Bundler",
     "baseUrl": ".",
     "types": ["node"],
+    "outDir": "dist",
     "esModuleInterop": true,
     "skipLibCheck": true
   }

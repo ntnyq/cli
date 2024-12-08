@@ -1,14 +1,14 @@
 'use strict'
 
 import process from 'node:process'
-import React, { useState } from 'react'
-import open from 'open'
 import { Box, Text } from 'ink'
-import Link from 'ink-link'
 import BigText from 'ink-big-text'
 import Gradient from 'ink-gradient'
+import Link from 'ink-link'
 import SelectInput from 'ink-select-input'
 import { UncontrolledTextInput } from 'ink-text-input'
+import open from 'open'
+import React, { useState } from 'react'
 import type { ISelectItem } from './types'
 
 const createItems = (items: Omit<ISelectItem, 'value'>[]) =>

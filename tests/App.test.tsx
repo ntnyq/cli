@@ -1,8 +1,8 @@
 import process from 'node:process'
-import React from 'react'
-import { it, expect } from 'vitest'
-import stripAnsi from 'strip-ansi'
 import { render } from 'ink-testing-library'
+import React from 'react'
+import stripAnsi from 'strip-ansi'
+import { expect, it } from 'vitest'
 import { App } from '../src/App'
 
 it('render App', () => {
@@ -20,4 +20,12 @@ it('render App', () => {
   ).toBeTruthy()
 
   delete process.env.FORCE_COLOR
+})
+
+it('snapshot', () => {
+  const { lastFrame } = render(<App name='ntnyq' />)
+  const stripedFrame = stripAnsi(lastFrame())
+
+  // no `❯` for windows
+  expect(stripedFrame.replace('>', '❯')).toMatchSnapshot()
 })

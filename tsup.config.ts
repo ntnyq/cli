@@ -1,8 +1,8 @@
 import { defineConfig } from 'tsup'
 
 export default defineConfig({
-  entry: ['src/cli.tsx'],
-  clean: true,
   bundle: true,
+  clean: true,
+  entry: ['src/cli.tsx'],
   format: ['esm'],
 })
