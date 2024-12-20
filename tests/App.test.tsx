@@ -1,7 +1,7 @@
 import process from 'node:process'
+import { stripVTControlCharacters } from 'node:util'
 import { render } from 'ink-testing-library'
 import React from 'react'
-import stripAnsi from 'strip-ansi'
 import { expect, it } from 'vitest'
 import { App } from '../src/App'
 
@@ -11,7 +11,7 @@ it('render App', () => {
 
   const { lastFrame } = render(<App name='ntnyq' />)
 
-  const stripedFrame = stripAnsi(lastFrame())
+  const stripedFrame = stripVTControlCharacters(lastFrame())
 
   expect(
     ['ntnyq', 'Website', 'Twitter', 'GitHub', 'Bilibili', 'Juejin', 'Segment Fault', 'Quit'].every(
@@ -24,7 +24,7 @@ it('render App', () => {
 
 it('snapshot', () => {
   const { lastFrame } = render(<App name='ntnyq' />)
-  const stripedFrame = stripAnsi(lastFrame())
+  const stripedFrame = stripVTControlCharacters(lastFrame())
 
   // no `❯` for windows
   expect(stripedFrame.replace('>', '❯')).toMatchSnapshot()

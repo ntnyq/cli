@@ -2,7 +2,7 @@
   "name": "ntnyq",
   "type": "module",
   "version": "0.2.0",
-  "packageManager": "pnpm@9.15.0",
+  "packageManager": "pnpm@9.15.1",
   "description": "The ntnyq CLI",
   "keywords": [
     "cli",
@@ -37,28 +37,27 @@
     "ink-select-input": "^6.0.0",
     "ink-text-input": "^6.0.0",
     "open": "^10.1.0",
-    "react": "^18.2.0"
+    "react": "^18.3.1"
   },
   "devDependencies": {
-    "@ntnyq/eslint-config": "^3.9.1",
+    "@ntnyq/eslint-config": "^3.9.4",
     "@ntnyq/prettier-config": "^1.22.0",
-    "@types/node": "^22.10.1",
-    "@types/react": "^19.0.1",
-    "bumpp": "^9.8.1",
-    "eslint": "^9.16.0",
+    "@types/node": "^22.10.2",
+    "@types/react": "^19.0.2",
+    "bumpp": "^9.9.1",
+    "eslint": "^9.17.0",
     "husky": "^9.1.7",
     "ink-testing-library": "^4.0.0",
     "nano-staged": "^0.8.0",
-    "npm-run-all2": "^7.0.1",
+    "npm-run-all2": "^7.0.2",
     "prettier": "^3.4.2",
-    "strip-ansi": "^7.1.0",
     "tsup": "^8.3.5",
     "tsx": "^4.19.2",
     "typescript": "^5.7.2",
-    "vitest": "^2.1.8"
+    "vitest": "^3.0.0-beta.3"
   },
   "engines": {
-    "node": ">=18.18"
+    "node": ">=18.18.0"
   },
   "nano-staged": {
     "*.{js,ts,cjs,mjs,jsx,tsx,json,yml,yaml,md}": "eslint --fix"
