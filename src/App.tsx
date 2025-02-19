@@ -30,16 +30,20 @@ export const App: React.FC<Props> = ({ name }) => {
       url: 'https://ntnyq.com',
     },
     {
-      label: 'Twitter',
-      url: 'https://twitter.com/ntnyq',
-    },
-    {
       label: 'GitHub',
       url: 'https://github.com/ntnyq',
     },
     {
+      label: 'Twitter',
+      url: 'https://twitter.com/ntnyq',
+    },
+    {
       label: 'Bilibili',
       url: 'https://space.bilibili.com/40199161',
+    },
+    {
+      label: 'Bluesky',
+      url: 'https://bsky.app/profile/ntnyq.com',
     },
     {
       label: 'Juejin',
@@ -69,7 +73,9 @@ export const App: React.FC<Props> = ({ name }) => {
   }
   const handleSubmit = (message: string) => {
     if (message.length) {
-      open(`https://github.com/ntnyq/ntnyq/issues/new?title=${encodeURIComponent(message)}`)
+      open(
+        `https://github.com/ntnyq/ntnyq/issues/new?title=${encodeURIComponent(message)}`,
+      )
     }
     return setIsComment(false)
   }

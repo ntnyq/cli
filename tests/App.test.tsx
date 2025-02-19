@@ -14,9 +14,17 @@ it('render App', () => {
   const stripedFrame = stripVTControlCharacters(lastFrame())
 
   expect(
-    ['ntnyq', 'Website', 'Twitter', 'GitHub', 'Bilibili', 'Juejin', 'Segment Fault', 'Quit'].every(
-      word => stripedFrame.includes(word),
-    ),
+    [
+      'ntnyq',
+      'Website',
+      'Twitter',
+      'GitHub',
+      'Bluesky',
+      'Bilibili',
+      'Juejin',
+      'Segment Fault',
+      'Quit',
+    ].every(word => stripedFrame.includes(word)),
   ).toBeTruthy()
 
   delete process.env.FORCE_COLOR
