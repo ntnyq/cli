@@ -1,8 +1,7 @@
-import { defineConfig } from 'tsup'
+import { defineConfig } from 'tsdown'
 
 export default defineConfig({
-  bundle: true,
   clean: true,
   entry: ['src/cli.tsx'],
-  format: ['esm'],
+  format: 'esm',
 })

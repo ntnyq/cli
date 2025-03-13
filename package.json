@@ -10,22 +10,23 @@
   ],
   "license": "MIT",
   "author": "ntnyq <ntnyq@gmail.com>",
-  "repository": "ntnyq/cli",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ntnyq/cli.git"
+  },
   "exports": "./dist/cli.js",
   "main": "./dist/cli.js",
-  "bin": {
-    "ntnyq": "./dist/cli.js"
-  },
+  "bin": "./dist/cli.js",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsup",
-    "dev": "tsup --watch",
+    "build": "tsdown",
+    "dev": "tsdown --watch",
     "lint": "eslint",
     "prepare": "husky",
-    "prepublishOnly": "tsup",
-    "release": "bumpp && npm publish",
+    "prepublishOnly": "pnpm run build",
+    "release": "bumpp && pnpm publish",
     "test": "vitest",
     "typecheck": "tsc --noEmit"
   },
@@ -50,7 +51,7 @@
     "ink-testing-library": "^4.0.0",
     "nano-staged": "^0.8.0",
     "prettier": "^3.5.3",
-    "tsup": "^8.4.0",
+    "tsdown": "^0.6.8",
     "typescript": "^5.8.2",
     "vitest": "^3.0.8"
   },
