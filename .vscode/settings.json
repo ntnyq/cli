@@ -30,6 +30,7 @@
     "Juejin",
     "pnpm",
     "sindresorhus",
-    "tsdown"
+    "tsdown",
+    "unrs"
   ]
 }

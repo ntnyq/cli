@@ -6,8 +6,7 @@ import { expect, it } from 'vitest'
 import { App } from '../src/App'
 
 it('render App', () => {
-  // @ts-expect-error expect a string
-  process.env.FORCE_COLOR = 1
+  process.env.FORCE_COLOR = '1'
 
   const { lastFrame } = render(<App name='ntnyq' />)
 
