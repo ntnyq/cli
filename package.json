@@ -1,7 +1,7 @@
 {
   "name": "ntnyq",
   "type": "module",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "packageManager": "pnpm@10.11.0",
   "description": "The ntnyq CLI",
   "keywords": [
