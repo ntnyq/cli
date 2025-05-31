@@ -68,7 +68,9 @@ export const App: React.FC<Props> = ({ name }) => {
   ])
 
   const handleSelect = (item: ISelectItem) => {
-    if (item.url) return open(item.url)
+    if (item.url) {
+      return open(item.url)
+    }
     item.action?.()
   }
   const handleSubmit = (message: string) => {
