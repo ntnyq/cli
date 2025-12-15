@@ -1,8 +1,6 @@
 {
   "name": "ntnyq",
-  "type": "module",
   "version": "0.4.0",
-  "packageManager": "pnpm@10.24.0",
   "description": "The ntnyq CLI",
   "keywords": [
     "cli",
@@ -14,51 +12,57 @@
     "type": "git",
     "url": "git+https://github.com/ntnyq/cli.git"
   },
-  "exports": "./dist/cli.mjs",
-  "main": "./dist/cli.mjs",
   "bin": "./dist/cli.mjs",
   "files": [
     "dist"
   ],
+  "type": "module",
+  "main": "./dist/cli.mjs",
+  "exports": "./dist/cli.mjs",
   "scripts": {
     "build": "tsdown",
     "dev": "tsdown --watch",
-    "lint": "eslint",
+    "format": "oxfmt",
+    "format:check": "oxfmt --check",
+    "lint": "oxlint",
     "prepare": "husky",
     "prepublishOnly": "pnpm run build",
-    "release": "bumpp",
+    "release": "run-s release:check release:version",
+    "release:check": "run-s format:check lint typecheck test",
+    "release:version": "bumpp",
     "test": "vitest",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsgo --noEmit"
   },
   "dependencies": {
-    "ink": "^6.5.1",
+    "ink": "^6.8.0",
     "ink-big-text": "^2.0.0",
-    "ink-gradient": "^3.0.0",
+    "ink-gradient": "^4.0.0",
     "ink-link": "^5.0.0",
     "ink-select-input": "^6.2.0",
     "ink-text-input": "^6.0.0",
     "open": "^11.0.0",
-    "react": "^19.2.1"
+    "react": "^19.2.4"
   },
   "devDependencies": {
-    "@ntnyq/eslint-config": "^5.8.0",
-    "@ntnyq/prettier-config": "^3.0.1",
-    "@types/node": "^24.10.1",
-    "@types/react": "^19.2.7",
-    "bumpp": "^10.3.2",
-    "eslint": "^9.39.1",
+    "@types/node": "^25.3.3",
+    "@types/react": "^19.2.14",
+    "@typescript/native-preview": "^7.0.0-dev.20260301.1",
+    "bumpp": "^10.4.1",
     "husky": "^9.1.7",
     "ink-testing-library": "^4.0.0",
     "nano-staged": "^0.9.0",
-    "prettier": "^3.7.4",
-    "tsdown": "^0.17.0",
-    "typescript": "^5.9.3",
-    "vitest": "^4.0.15"
+    "npm-run-all2": "^8.0.4",
+    "oxfmt": "^0.35.0",
+    "oxlint": "^1.50.0",
+    "tsdown": "^0.21.0-beta.2",
+    "vitest": "^4.0.18"
+  },
+  "nano-staged": {
+    "*.{js,ts,mjs,tsx}": "oxlint --fix",
+    "*": "oxfmt --no-error-on-unmatched-pattern"
   },
   "engines": {
     "node": ">=20.19.0"
   },
-  "nano-staged": {
-    "*.{js,ts,cjs,mjs,tsx,md,yml,yaml,json}": "eslint --fix"
-  }
+  "packageManager": "pnpm@10.30.3"
 }

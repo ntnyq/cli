@@ -54,16 +54,16 @@ export const App: React.FC<Props> = ({ name }) => {
       url: 'https://segmentfault.com/u/ntnyq',
     },
     {
-      label: 'Leave a message',
       action() {
         setIsComment(true)
       },
+      label: 'Leave a message',
     },
     {
-      label: 'Quit',
       action() {
         process.exit()
       },
+      label: 'Quit',
     },
   ])
 
@@ -74,7 +74,7 @@ export const App: React.FC<Props> = ({ name }) => {
     item.action?.()
   }
   const handleSubmit = (message: string) => {
-    if (message.length) {
+    if (message.length > 0) {
       open(
         `https://github.com/ntnyq/ntnyq/issues/new?title=${encodeURIComponent(message)}`,
       )
