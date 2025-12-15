@@ -51,7 +51,7 @@
     "ink-testing-library": "^4.0.0",
     "nano-staged": "^0.9.0",
     "prettier": "^3.7.4",
-    "tsdown": "^0.17.0",
+    "tsdown": "^0.17.1",
     "typescript": "^5.9.3",
     "vitest": "^4.0.15"
   },
