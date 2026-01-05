@@ -12,23 +12,23 @@ importers:
   .:
     dependencies:
       ink:
-        specifier: ^6.5.1
-        version: 6.5.1(@types/react@19.2.7)(react@19.2.3)
+        specifier: ^6.6.0
+        version: 6.6.0(@types/react@19.2.7)(react@19.2.3)
       ink-big-text:
         specifier: ^2.0.0
-        version: 2.0.0(ink@6.5.1(@types/react@19.2.7)(react@19.2.3))(react@19.2.3)
+        version: 2.0.0(ink@6.6.0(@types/react@19.2.7)(react@19.2.3))(react@19.2.3)
       ink-gradient:
         specifier: ^3.0.0
-        version: 3.0.0(ink@6.5.1(@types/react@19.2.7)(react@19.2.3))
+        version: 3.0.0(ink@6.6.0(@types/react@19.2.7)(react@19.2.3))
       ink-link:
         specifier: ^5.0.0
-        version: 5.0.0(ink@6.5.1(@types/react@19.2.7)(react@19.2.3))
+        version: 5.0.0(ink@6.6.0(@types/react@19.2.7)(react@19.2.3))
       ink-select-input:
         specifier: ^6.2.0
-        version: 6.2.0(ink@6.5.1(@types/react@19.2.7)(react@19.2.3))(react@19.2.3)
+        version: 6.2.0(ink@6.6.0(@types/react@19.2.7)(react@19.2.3))(react@19.2.3)
       ink-text-input:
         specifier: ^6.0.0
-        version: 6.0.0(ink@6.5.1(@types/react@19.2.7)(react@19.2.3))(react@19.2.3)
+        version: 6.0.0(ink@6.6.0(@types/react@19.2.7)(react@19.2.3))(react@19.2.3)
       open:
         specifier: ^11.0.0
         version: 11.0.0
@@ -67,7 +67,7 @@ importers:
         specifier: ^3.7.4
         version: 3.7.4
       tsdown:
-        specifier: ^0.18.2
+        specifier: ^0.18.3
         version: 0.18.3(synckit@0.11.11)(typescript@5.9.3)
       typescript:
         specifier: ^5.9.3
@@ -1741,8 +1741,8 @@ packages:
       ink: '>=5'
       react: '>=18'
 
-  ink@6.5.1:
-    resolution: {integrity: sha512-wF3j/DmkM8q5E+OtfdQhCRw8/0ahkc8CUTgEddxZzpEWPslu7YPL3t64MWRoI9m6upVGpfAg4ms2BBvxCdKRLQ==}
+  ink@6.6.0:
+    resolution: {integrity: sha512-QDt6FgJxgmSxAelcOvOHUvFxbIUjVpCH5bx+Slvc5m7IEcpGt3dYwbz/L+oRnqEGeRvwy1tineKK4ect3nW1vQ==}
     engines: {node: '>=20'}
     peerDependencies:
       '@types/react': '>=19.0.0'
@@ -4266,30 +4266,30 @@ snapshots:
 
   indent-string@5.0.0: {}
 
-  ink-big-text@2.0.0(ink@6.5.1(@types/react@19.2.7)(react@19.2.3))(react@19.2.3):
+  ink-big-text@2.0.0(ink@6.6.0(@types/react@19.2.7)(react@19.2.3))(react@19.2.3):
     dependencies:
       cfonts: 3.3.1
-      ink: 6.5.1(@types/react@19.2.7)(react@19.2.3)
+      ink: 6.6.0(@types/react@19.2.7)(react@19.2.3)
       prop-types: 15.8.1
       react: 19.2.3
 
-  ink-gradient@3.0.0(ink@6.5.1(@types/react@19.2.7)(react@19.2.3)):
+  ink-gradient@3.0.0(ink@6.6.0(@types/react@19.2.7)(react@19.2.3)):
     dependencies:
       '@types/gradient-string': 1.1.6
       gradient-string: 2.0.2
-      ink: 6.5.1(@types/react@19.2.7)(react@19.2.3)
+      ink: 6.6.0(@types/react@19.2.7)(react@19.2.3)
       prop-types: 15.8.1
       strip-ansi: 7.1.2
 
-  ink-link@5.0.0(ink@6.5.1(@types/react@19.2.7)(react@19.2.3)):
+  ink-link@5.0.0(ink@6.6.0(@types/react@19.2.7)(react@19.2.3)):
     dependencies:
-      ink: 6.5.1(@types/react@19.2.7)(react@19.2.3)
+      ink: 6.6.0(@types/react@19.2.7)(react@19.2.3)
       terminal-link: 5.0.0
 
-  ink-select-input@6.2.0(ink@6.5.1(@types/react@19.2.7)(react@19.2.3))(react@19.2.3):
+  ink-select-input@6.2.0(ink@6.6.0(@types/react@19.2.7)(react@19.2.3))(react@19.2.3):
     dependencies:
       figures: 6.1.0
-      ink: 6.5.1(@types/react@19.2.7)(react@19.2.3)
+      ink: 6.6.0(@types/react@19.2.7)(react@19.2.3)
       react: 19.2.3
       to-rotated: 1.0.0
 
@@ -4297,14 +4297,14 @@ snapshots:
     optionalDependencies:
       '@types/react': 19.2.7
 
-  ink-text-input@6.0.0(ink@6.5.1(@types/react@19.2.7)(react@19.2.3))(react@19.2.3):
+  ink-text-input@6.0.0(ink@6.6.0(@types/react@19.2.7)(react@19.2.3))(react@19.2.3):
     dependencies:
       chalk: 5.6.2
-      ink: 6.5.1(@types/react@19.2.7)(react@19.2.3)
+      ink: 6.6.0(@types/react@19.2.7)(react@19.2.3)
       react: 19.2.3
       type-fest: 4.41.0
 
-  ink@6.5.1(@types/react@19.2.7)(react@19.2.3):
+  ink@6.6.0(@types/react@19.2.7)(react@19.2.3):
     dependencies:
       '@alcalzone/ansi-tokenize': 0.2.2
       ansi-escapes: 7.2.0
