@@ -2,7 +2,7 @@
   "name": "ntnyq",
   "type": "module",
   "version": "0.4.0",
-  "packageManager": "pnpm@10.26.2",
+  "packageManager": "pnpm@10.27.0",
   "description": "The ntnyq CLI",
   "keywords": [
     "cli",
@@ -41,7 +41,7 @@
     "react": "^19.2.3"
   },
   "devDependencies": {
-    "@ntnyq/eslint-config": "^5.8.0",
+    "@ntnyq/eslint-config": "^5.9.0",
     "@ntnyq/prettier-config": "^3.0.1",
     "@types/node": "^24.10.4",
     "@types/react": "^19.2.7",
@@ -51,7 +51,7 @@
     "ink-testing-library": "^4.0.0",
     "nano-staged": "^0.9.0",
     "prettier": "^3.7.4",
-    "tsdown": "^0.18.3",
+    "tsdown": "^0.18.4",
     "typescript": "^5.9.3",
     "vitest": "^4.0.16"
   },
