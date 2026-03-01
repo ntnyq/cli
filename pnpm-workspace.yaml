@@ -1,3 +1,5 @@
+overrides:
+  ink: ^6.8.0
+  react: ^19.2.4
 onlyBuiltDependencies:
   - esbuild
-  - unrs-resolver
