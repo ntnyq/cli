@@ -24,7 +24,7 @@ it('render App', () => {
       'Segment Fault',
       'Quit',
     ].every(word => stripedFrame.includes(word)),
-  ).toBeTruthy()
+  ).toBe(true)
 
   delete process.env.FORCE_COLOR
 })
