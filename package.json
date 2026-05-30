@@ -34,28 +34,28 @@
     "typecheck": "tsgo --noEmit"
   },
   "dependencies": {
-    "ink": "^7.0.0",
+    "ink": "^7.0.5",
     "ink-big-text": "^2.0.0",
-    "ink-gradient": "^4.0.0",
+    "ink-gradient": "^4.0.1",
     "ink-link": "^5.0.0",
     "ink-select-input": "^6.2.0",
     "ink-text-input": "^6.0.0",
     "open": "^11.0.0",
-    "react": "^19.2.5"
+    "react": "^19.2.6"
   },
   "devDependencies": {
-    "@types/node": "^25.6.0",
-    "@types/react": "^19.2.14",
-    "@typescript/native-preview": "^7.0.0-dev.20260410.1",
-    "bumpp": "^11.0.1",
+    "@types/node": "^25.9.1",
+    "@types/react": "^19.2.15",
+    "@typescript/native-preview": "^7.0.0-dev.20260527.2",
+    "bumpp": "^11.1.0",
     "husky": "^9.1.7",
     "ink-testing-library": "^4.0.0",
     "nano-staged": "^1.0.2",
-    "npm-run-all2": "^8.0.4",
-    "oxfmt": "^0.44.0",
-    "oxlint": "^1.59.0",
-    "tsdown": "^0.21.7",
-    "vitest": "^4.1.4"
+    "npm-run-all2": "^9.0.1",
+    "oxfmt": "^0.52.0",
+    "oxlint": "^1.67.0",
+    "tsdown": "^0.22.1",
+    "vitest": "^4.1.7"
   },
   "nano-staged": {
     "*.{js,ts,mjs,tsx}": "oxlint --fix",
@@ -64,5 +64,5 @@
   "engines": {
     "node": ">=22.12.0"
   },
-  "packageManager": "pnpm@10.33.0"
+  "packageManager": "pnpm@11.5.0"
 }

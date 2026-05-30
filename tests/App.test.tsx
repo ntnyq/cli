@@ -2,7 +2,7 @@ import process from 'node:process'
 import { stripVTControlCharacters } from 'node:util'
 import { render } from 'ink-testing-library'
 import React from 'react'
-import { expect, it } from 'vitest'
+import { expect, it, test } from 'vitest'
 import { App } from '../src/App'
 
 it('render App', () => {
@@ -29,7 +29,7 @@ it('render App', () => {
   delete process.env.FORCE_COLOR
 })
 
-it('snapshot', () => {
+test('snapshot', () => {
   const { lastFrame } = render(<App name='ntnyq' />)
   const stripedFrame = stripVTControlCharacters(lastFrame() ?? '')
 

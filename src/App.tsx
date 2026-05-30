@@ -17,8 +17,11 @@ const createItems = (items: Omit<ISelectItem, 'value'>[]) =>
     value: item.label,
   }))
 
-export interface Props {
-  name: string
+function handleSelect(item: ISelectItem) {
+  if (item.url) {
+    return open(item.url)
+  }
+  item.action?.()
 }
 
 export const App: React.FC<Props> = ({ name }) => {
@@ -67,12 +70,6 @@ export const App: React.FC<Props> = ({ name }) => {
     },
   ])
 
-  const handleSelect = (item: ISelectItem) => {
-    if (item.url) {
-      return open(item.url)
-    }
-    item.action?.()
-  }
   const handleSubmit = (message: string) => {
     if (message.length > 0) {
       open(
@@ -127,4 +124,8 @@ export const App: React.FC<Props> = ({ name }) => {
       </Box>
     </Box>
   )
+}
+
+export interface Props {
+  name: string
 }

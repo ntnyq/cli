@@ -1,5 +1,1 @@
-overrides:
-  ink: ^7.0.0
-  react: ^19.2.5
-onlyBuiltDependencies:
-  - esbuild
+minimumReleaseAge: 0
