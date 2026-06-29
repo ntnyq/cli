@@ -34,7 +34,7 @@
     "typecheck": "tsgo --noEmit"
   },
   "dependencies": {
-    "ink": "^7.0.6",
+    "ink": "^7.1.0",
     "ink-big-text": "^2.0.0",
     "ink-gradient": "^4.0.1",
     "ink-link": "^5.0.0",
@@ -44,18 +44,18 @@
     "react": "^19.2.7"
   },
   "devDependencies": {
-    "@types/node": "^25.9.3",
+    "@types/node": "^25.9.4",
     "@types/react": "^19.2.17",
-    "@typescript/native-preview": "^7.0.0-dev.20260614.1",
+    "@typescript/native-preview": "^7.0.0-dev.20260622.1",
     "bumpp": "^11.1.0",
     "husky": "^9.1.7",
     "ink-testing-library": "^4.0.0",
     "nano-staged": "^1.0.2",
     "npm-run-all2": "^9.0.2",
-    "oxfmt": "^0.54.0",
-    "oxlint": "^1.69.0",
-    "tsdown": "^0.22.2",
-    "vitest": "^4.1.8"
+    "oxfmt": "^0.56.0",
+    "oxlint": "^1.71.0",
+    "tsdown": "^0.22.3",
+    "vitest": "^4.1.9"
   },
   "nano-staged": {
     "*.{js,ts,mjs,tsx}": "oxlint --fix",
@@ -64,5 +64,5 @@
   "engines": {
     "node": ">=22.12.0"
   },
-  "packageManager": "pnpm@11.6.0"
+  "packageManager": "pnpm@11.8.0"
 }
