@@ -40,7 +40,7 @@ importers:
         specifier: ^19.2.17
         version: 19.2.17
       '@typescript/native-preview':
-        specifier: ^7.0.0-dev.20260622.1
+        specifier: ^7.0.0-dev.20260628.1
         version: 7.0.0-dev.20260629.1
       bumpp:
         specifier: ^11.1.0
