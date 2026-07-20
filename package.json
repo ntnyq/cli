@@ -44,18 +44,18 @@
     "react": "^19.2.7"
   },
   "devDependencies": {
-    "@types/node": "^25.9.4",
+    "@types/node": "^25.9.5",
     "@types/react": "^19.2.17",
-    "@typescript/native-preview": "^7.0.0-dev.20260628.1",
+    "@typescript/native-preview": "^7.0.0-dev.20260707.2",
     "bumpp": "^11.1.0",
     "husky": "^9.1.7",
     "ink-testing-library": "^4.0.0",
     "nano-staged": "^1.0.2",
     "npm-run-all2": "^9.0.2",
-    "oxfmt": "^0.56.0",
-    "oxlint": "^1.71.0",
-    "tsdown": "^0.22.3",
-    "vitest": "^4.1.9"
+    "oxfmt": "^0.58.0",
+    "oxlint": "^1.73.0",
+    "tsdown": "^0.22.7",
+    "vitest": "^4.1.10"
   },
   "nano-staged": {
     "*.{js,ts,mjs,tsx}": "oxlint --fix",
@@ -64,5 +64,5 @@
   "engines": {
     "node": ">=22.12.0"
   },
-  "packageManager": "pnpm@11.9.0"
+  "packageManager": "pnpm@11.11.0"
 }
