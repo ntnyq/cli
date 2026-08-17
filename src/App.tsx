@@ -25,9 +25,9 @@ function handleSelect(item: ISelectItem) {
 }
 
 export const App: React.FC<Props> = ({ name }) => {
-  const [isComment, setIsComment] = useState(false)
+  const [isComment, setIsComment] = useState(false),
 
-  const items: ISelectItem[] = createItems([
+   items: ISelectItem[] = createItems([
     {
       label: 'Website',
       url: 'https://ntnyq.com',
@@ -68,9 +68,9 @@ export const App: React.FC<Props> = ({ name }) => {
       },
       label: 'Quit',
     },
-  ])
+  ]),
 
-  const handleSubmit = (message: string) => {
+   handleSubmit = (message: string) => {
     if (message.length > 0) {
       open(
         `https://github.com/ntnyq/ntnyq/issues/new?title=${encodeURIComponent(message)}`,

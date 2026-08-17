@@ -8,9 +8,9 @@ import { App } from '../src/App'
 it('render App', () => {
   process.env.FORCE_COLOR = '1'
 
-  const { lastFrame } = render(<App name='ntnyq' />)
+  const { lastFrame } = render(<App name='ntnyq' />),
 
-  const stripedFrame = stripVTControlCharacters(lastFrame() ?? '')
+   stripedFrame = stripVTControlCharacters(lastFrame() ?? '')
 
   expect(
     [
@@ -30,8 +30,8 @@ it('render App', () => {
 })
 
 test('snapshot', () => {
-  const { lastFrame } = render(<App name='ntnyq' />)
-  const stripedFrame = stripVTControlCharacters(lastFrame() ?? '')
+  const { lastFrame } = render(<App name='ntnyq' />),
+   stripedFrame = stripVTControlCharacters(lastFrame() ?? '')
 
   // no `❯` for windows
   expect(stripedFrame.replace('>', '❯')).toMatchSnapshot()
