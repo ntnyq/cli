@@ -26,58 +26,56 @@ function handleSelect(item: ISelectItem) {
 
 export const App: React.FC<Props> = ({ name }) => {
   const [isComment, setIsComment] = useState(false),
-
-   items: ISelectItem[] = createItems([
-    {
-      label: 'Website',
-      url: 'https://ntnyq.com',
-    },
-    {
-      label: 'GitHub',
-      url: 'https://github.com/ntnyq',
-    },
-    {
-      label: 'Twitter',
-      url: 'https://twitter.com/ntnyq',
-    },
-    {
-      label: 'Bilibili',
-      url: 'https://space.bilibili.com/40199161',
-    },
-    {
-      label: 'Bluesky',
-      url: 'https://bsky.app/profile/ntnyq.com',
-    },
-    {
-      label: 'Juejin',
-      url: 'https://juejin.cn/user/1591748566717591',
-    },
-    {
-      label: 'Segment Fault',
-      url: 'https://segmentfault.com/u/ntnyq',
-    },
-    {
-      action() {
-        setIsComment(true)
+    items: ISelectItem[] = createItems([
+      {
+        label: 'Website',
+        url: 'https://ntnyq.com',
       },
-      label: 'Leave a message',
-    },
-    {
-      action() {
-        process.exit()
+      {
+        label: 'GitHub',
+        url: 'https://github.com/ntnyq',
       },
-      label: 'Quit',
-    },
-  ]),
-
-   handleSubmit = (message: string) => {
-    if (message.length > 0) {
-      open(
-        `https://github.com/ntnyq/ntnyq/issues/new?title=${encodeURIComponent(message)}`,
-      )
+      {
+        label: 'Twitter',
+        url: 'https://twitter.com/ntnyq',
+      },
+      {
+        label: 'Bilibili',
+        url: 'https://space.bilibili.com/40199161',
+      },
+      {
+        label: 'Bluesky',
+        url: 'https://bsky.app/profile/ntnyq.com',
+      },
+      {
+        label: 'Juejin',
+        url: 'https://juejin.cn/user/1591748566717591',
+      },
+      {
+        label: 'Segment Fault',
+        url: 'https://segmentfault.com/u/ntnyq',
+      },
+      {
+        action() {
+          setIsComment(true)
+        },
+        label: 'Leave a message',
+      },
+      {
+        action() {
+          process.exit()
+        },
+        label: 'Quit',
+      },
+    ]),
+    handleSubmit = (message: string) => {
+      if (message.length > 0) {
+        open(
+          `https://github.com/ntnyq/ntnyq/issues/new?title=${encodeURIComponent(message)}`,
+        )
+      }
+      return setIsComment(false)
     }
-    return setIsComment(false)
-  }
 
   return isComment ? (
     <Box
