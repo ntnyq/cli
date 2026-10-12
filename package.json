@@ -34,7 +34,7 @@
     "typecheck": "tsgo --noEmit"
   },
   "dependencies": {
-    "ink": "^7.1.1",
+    "ink": "^8.0.0",
     "ink-big-text": "^2.0.0",
     "ink-gradient": "^4.0.1",
     "ink-link": "^5.0.0",
